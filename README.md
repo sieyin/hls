@@ -5,4 +5,4 @@ A simple front built around [hls.js](https://github.com/video-dev/hls.js/) to st
 You can see it at work here → [https://sieyin.github.io/hls/](https://sieyin.github.io/hls/).
 
 > [!TIP]
-> You may [try this stream URL](https://sieyin.github.io/hls/?stream=https://live-hls-v3-aje.getaj.net/AJE-V3/index.m3u8) as an example →  https://live-hls-v3-aje.getaj.net/AJE-V3/index.m3u
+> You may [try this stream URL](https://sieyin.github.io/hls/?stream=https://live-hls-v3-aje.getaj.net/AJE-V3/index.m3u8) as an example →  https://live-hls-v3-aje.getaj.net/AJE-V3/index.m3u8
