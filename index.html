@@ -61,14 +61,13 @@
 				-ms-transform: translate(-50%, -50%);
 				transform: translate(-50%, -50%);
 			}
-
 		</style>
 	</head>
 	<body>
 		<script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
 		
 		<form id="paste">
-			<textarea id="geturl" placeholder="Paste the stream URL here and click the 'Play' button.&#13;OR paste it in the browser address bar by adding '?YOUR_STREAM_URL' to what's currently there and press enter."></textarea>
+			<textarea id="geturl" placeholder="Paste the stream URL here and click the 'Play' button.&#13;OR paste it in the browser address bar by adding '?stream=YOUR_STREAM_URL' to what's currently there and press enter."></textarea>
 			<button type="button" onclick="hls(document.getElementById('geturl').value);">Play</button>
 		</form>
 
@@ -77,16 +76,15 @@
 		<script type="text/javascript">
 			function hls(url) {
 				if (url)
-					window.location = "?" + url;
+					window.location += "?stream=" + url;
 			}
 		</script>
 
 		<script type="text/javascript">
 			var video = document.getElementById('video');
-
 			if (window.location.search) {
 				document.getElementById('paste').style.display = 'none';
-				var videoSrc = window.location.search.substring(1);
+				var videoSrc = window.location.search.substring(8);
 				if (Hls.isSupported()) {
 					var hls = new Hls();
 					hls.loadSource(videoSrc);
