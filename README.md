@@ -1,6 +1,6 @@
 # Simple HLS Player
 
-A simple front built around [hls.js](https://github.com/video-dev/hls.js/) to stream video URLS on the web as easy as possible.
+A simple front built around [hls.js](https://github.com/video-dev/hls.js/) to make watching streaming video URLS on the web as easy as possible.
 
 You can see it at work here → [https://sieyin.github.io/hls/](https://sieyin.github.io/hls/).
 
