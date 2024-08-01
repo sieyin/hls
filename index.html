@@ -87,7 +87,7 @@
 		<script type="text/javascript">
 			function hls(url) {
 				if (url)
-					window.location += "?stream=" + url;
+					window.location.assign(window.location.host + window.location.pathname + "?stream=" + url);
 			}
 		</script>
 
